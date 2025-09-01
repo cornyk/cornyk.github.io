@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Neil K.&#39;s Blog</title>
+  <icon>https://blog.cony.tech/icon.png</icon>
+  
+  <link href="https://blog.cony.tech/atom.xml" rel="self"/>
+  
+  <link href="https://blog.cony.tech/"/>
+  <updated>2025-09-01T09:04:01.626Z</updated>
+  <id>https://blog.cony.tech/</id>
+  
+  <author>
+    <name>Neil K.</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cloudflare Pages 使用 GitHub Actions 部署静态网站</title>
+    <link href="https://blog.cony.tech/cloudflare/cloudflare-pages-with-github-actions/"/>
+    <id>https://blog.cony.tech/cloudflare/cloudflare-pages-with-github-actions/</id>
+    <published>2025-04-11T15:21:29.000Z</published>
+    <updated>2025-09-01T09:04:01.626Z</updated>
+    
+    
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;在 Cloudflare后台 -&amp;gt; 配置文件 -&amp;gt; API令牌， 生成 Cloudflare API的授权 Token&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;API 需要如下权限&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;权限分类&lt;/th&gt;
+&lt;th&gt;权限名&lt;/th&gt;
+&lt;th&gt;所需权限&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;帐户&lt;/td&gt;
+&lt;td&gt;Cloudflare Pages&lt;/td&gt;
+&lt;td&gt;编辑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;用户&lt;/td&gt;
+&lt;td&gt;用户详细信息&lt;/td&gt;
+&lt;td&gt;读取&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="Cloudflare" scheme="https://blog.cony.tech/categories/Cloudflare/"/>
+    
+    
+    <category term="Cloudflare" scheme="https://blog.cony.tech/tags/Cloudflare/"/>
+    
+    <category term="GitHub Actions" scheme="https://blog.cony.tech/tags/GitHub-Actions/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cloudflare Workers 使用 GitHub Actions 部署项目</title>
+    <link href="https://blog.cony.tech/cloudflare/cloudflare-workers-with-github-actions/"/>
+    <id>https://blog.cony.tech/cloudflare/cloudflare-workers-with-github-actions/</id>
+    <published>2025-04-11T14:49:13.000Z</published>
+    <updated>2025-09-01T09:04:01.626Z</updated>
+    
+    
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;在 Cloudflare后台 -&amp;gt; 配置文件 -&amp;gt; API令牌， 生成 Cloudflare API的授权 Token&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;API 需要如下权限&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;权限分类&lt;/th&gt;
+&lt;th&gt;权限名&lt;/th&gt;
+&lt;th&gt;所需权限&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;帐户&lt;/td&gt;
+&lt;td&gt;Workers 脚本&lt;/td&gt;
+&lt;td&gt;编辑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;区域&lt;/td&gt;
+&lt;td&gt;Workers 路由&lt;/td&gt;
+&lt;td&gt;编辑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;用户&lt;/td&gt;
+&lt;td&gt;用户详细信息&lt;/td&gt;
+&lt;td&gt;读取&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="Cloudflare" scheme="https://blog.cony.tech/categories/Cloudflare/"/>
+    
+    
+    <category term="Cloudflare" scheme="https://blog.cony.tech/tags/Cloudflare/"/>
+    
+    <category term="GitHub Actions" scheme="https://blog.cony.tech/tags/GitHub-Actions/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SPA单页应用 (Vue/React) 通过GitHub Actions部署到Netlify</title>
+    <link href="https://blog.cony.tech/github/spa-github-actions-deploy-2-netlify/"/>
+    <id>https://blog.cony.tech/github/spa-github-actions-deploy-2-netlify/</id>
+    <published>2025-02-28T17:38:19.000Z</published>
+    <updated>2025-09-01T09:04:01.626Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;目标：&quot;&gt;&lt;a href=&quot;#目标：&quot; class=&quot;headerlink&quot; title=&quot;目标：&quot;&gt;&lt;/a&gt;目标：&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;项目源代码放到Github私有仓库上（在个人账户和在组织账户均可）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;项目代码推送到特定分支后，通过GitHub Actions自动构建并发布，并根据不同环境执行不同的打包命令；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;项目部署在Netlify上，不同环境发布到Netlify的不同站点上。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="GitHub" scheme="https://blog.cony.tech/categories/GitHub/"/>
+    
+    
+    <category term="GitHub Actions" scheme="https://blog.cony.tech/tags/GitHub-Actions/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 彻底移除 Snap 毒瘤</title>
+    <link href="https://blog.cony.tech/linux/ubuntu-remove-snap/"/>
+    <id>https://blog.cony.tech/linux/ubuntu-remove-snap/</id>
+    <published>2025-02-27T11:01:19.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;移除方法同样适用于WSL的Ubuntu。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;停止开机自启的Snap服务。系统启动时，会自动启动Snap相关服务，我们先禁用掉这些服务。&lt;/p&gt;
+ &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;sudo&lt;/span&gt; systemctl &lt;span class=&quot;built_in&quot;&gt;disable&lt;/span&gt; snapd.service&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;sudo&lt;/span&gt; systemctl &lt;span class=&quot;built_in&quot;&gt;disable&lt;/span&gt; snapd.socket&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;sudo&lt;/span&gt; systemctl &lt;span class=&quot;built_in&quot;&gt;disable&lt;/span&gt; snapd.seeded.service&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://blog.cony.tech/categories/Linux/"/>
+    
+    
+    <category term="Ubuntu" scheme="https://blog.cony.tech/tags/Ubuntu/"/>
+    
+    <category term="WSL" scheme="https://blog.cony.tech/tags/WSL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows上修改Git提交的文件的权限</title>
+    <link href="https://blog.cony.tech/windows/windows-git-chmod/"/>
+    <id>https://blog.cony.tech/windows/windows-git-chmod/</id>
+    <published>2025-02-24T19:25:53.000Z</published>
+    <updated>2025-09-01T09:04:01.628Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;因为Windows系统没有像Linux&amp;#x2F;macOS这样的文件权限，导致代码同步到服务器上可能会缺失执行权限，因此可以在Git提交代码前在Git仓添加指定文件的权限标识。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Windows" scheme="https://blog.cony.tech/categories/Windows/"/>
+    
+    
+    <category term="Git" scheme="https://blog.cony.tech/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux使用supervisord守护进程</title>
+    <link href="https://blog.cony.tech/linux/linux-supervisord/"/>
+    <id>https://blog.cony.tech/linux/linux-supervisord/</id>
+    <published>2025-02-24T19:17:06.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;配置文件一般在 &lt;code&gt;/etc/supervisor/conf.d&lt;/code&gt; 路径下。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://blog.cony.tech/categories/Linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Cloudflare根域重定向到www域</title>
+    <link href="https://blog.cony.tech/cloudflare/cloudflare-nonwww-redirect-www/"/>
+    <id>https://blog.cony.tech/cloudflare/cloudflare-nonwww-redirect-www/</id>
+    <published>2025-02-24T19:08:54.000Z</published>
+    <updated>2025-09-01T09:04:01.626Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在Cloudflare后台面板上的 &lt;code&gt;规则 -&amp;gt; 重定向规则&lt;/code&gt; 里设定：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;主机名 &lt;code&gt;=</summary>
+        
+      
+    
+    
+    
+    <category term="Cloudflare" scheme="https://blog.cony.tech/categories/Cloudflare/"/>
+    
+    
+    <category term="Cloudflare" scheme="https://blog.cony.tech/tags/Cloudflare/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL创建数据库及用户</title>
+    <link href="https://blog.cony.tech/db/mysql-create-database-user/"/>
+    <id>https://blog.cony.tech/db/mysql-create-database-user/</id>
+    <published>2025-02-24T17:59:07.000Z</published>
+    <updated>2025-09-01T09:04:01.626Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;指定字符集创建数据库  &lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;CREATE&lt;/span&gt; DATABASE database_name &lt;span class=&quot;keyword&quot;&gt;CHARACTER SET&lt;/span&gt; utf8mb4 &lt;span class=&quot;keyword&quot;&gt;COLLATE&lt;/span&gt; utf8mb4_unicode_ci;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Database" scheme="https://blog.cony.tech/categories/Database/"/>
+    
+    
+    <category term="MySQL" scheme="https://blog.cony.tech/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu Launchpad 国内代理加速</title>
+    <link href="https://blog.cony.tech/linux/ubuntu-launchpad-cn-proxy/"/>
+    <id>https://blog.cony.tech/linux/ubuntu-launchpad-cn-proxy/</id>
+    <published>2025-02-24T17:31:17.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;中科大的Ubuntu Launchpad代理地址&lt;br&gt;  &lt;a href=&quot;https://launchpad.proxy.ustclug.org/&quot;&gt;https://launchpad.proxy.ustclug.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://blog.cony.tech/categories/Linux/"/>
+    
+    
+    <category term="Ubuntu" scheme="https://blog.cony.tech/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Debian/Ubuntu PHP的安装</title>
+    <link href="https://blog.cony.tech/linux/debian-ubuntu-php-install/"/>
+    <id>https://blog.cony.tech/linux/debian-ubuntu-php-install/</id>
+    <published>2025-02-24T16:58:28.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;推荐使用 &lt;a href=&quot;https://deb.sury.org/&quot;&gt;https://deb.sury.org&lt;/a&gt; 打包的软件包进行安装。&lt;br&gt;此软件包作者作为Debian的开发人员，从PHP5的时代开始就一直在为Debian打包PHP。客观上说，此软件包基本上比自己编译的更好更稳定也更方便使用。&lt;/p&gt;
+&lt;p&gt;此软件包提供了Debian和Ubuntu的软件包镜像源，理论上基于Debian或者Ubuntu的发行版均可使用，亲测Linux Mint可以使用 Ubuntu PPA 进行安装PHP。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://blog.cony.tech/categories/Linux/"/>
+    
+    
+    <category term="Debian" scheme="https://blog.cony.tech/tags/Debian/"/>
+    
+    <category term="Ubuntu" scheme="https://blog.cony.tech/tags/Ubuntu/"/>
+    
+    <category term="PHP" scheme="https://blog.cony.tech/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux创建和管理用户</title>
+    <link href="https://blog.cony.tech/linux/linux-user/"/>
+    <id>https://blog.cony.tech/linux/linux-user/</id>
+    <published>2025-02-19T18:56:01.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;添加用户组&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;groupadd developer&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://blog.cony.tech/categories/Linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>macOS终端配置</title>
+    <link href="https://blog.cony.tech/macos/macos-terminal-config/"/>
+    <id>https://blog.cony.tech/macos/macos-terminal-config/</id>
+    <published>2025-02-15T19:26:52.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;切换macOS默认shell为bash&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;chsh -s /bin/bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;配置当前用户下的 &lt;code&gt;~/.bash_profile&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="macOS" scheme="https://blog.cony.tech/categories/macOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在macOS iterm2 上使用 zmodem (rz/sz)</title>
+    <link href="https://blog.cony.tech/macos/macos-iterm2-zmodem/"/>
+    <id>https://blog.cony.tech/macos/macos-iterm2-zmodem/</id>
+    <published>2025-02-15T19:08:28.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;安装支持 &lt;code&gt;rz&lt;/code&gt; 和 &lt;code&gt;sz&lt;/code&gt; 命令的 &lt;code&gt;lrzsz&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew install lrzsz&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;在本地 &lt;code&gt;/usr/local/bin/&lt;/code&gt; 目录下分别创建 &lt;code&gt;iterm2-send-zmodem.sh&lt;/code&gt; 和 &lt;code&gt;iterm2-recv-zmodem.sh&lt;/code&gt; 两个脚本&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="macOS" scheme="https://blog.cony.tech/categories/macOS/"/>
+    
+    
+    <category term="iTerm" scheme="https://blog.cony.tech/tags/iTerm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部署Hexo博客到GitHub Pages</title>
+    <link href="https://blog.cony.tech/github/deploy-hexo-blog-2-github-pages/"/>
+    <id>https://blog.cony.tech/github/deploy-hexo-blog-2-github-pages/</id>
+    <published>2025-02-15T18:32:11.000Z</published>
+    <updated>2025-09-01T09:04:01.626Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;目标：&quot;&gt;&lt;a href=&quot;#目标：&quot; class=&quot;headerlink&quot; title=&quot;目标：&quot;&gt;&lt;/a&gt;目标：&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;博客源代码放到Github私有仓库上；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;直接往源代码私有仓上传或者直接在Github后台编辑Markdown文档，就能自动执行更新到Github Pages，方便多端工作或者在外没有本地Node.js的环境下也能更新博客；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;GitHub Pages仓库不需要保留每次更新的commit记录，没什么意义，上到Github看会很难受，万一不小心发了秘钥之类的信息也能及时删除。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="GitHub" scheme="https://blog.cony.tech/categories/GitHub/"/>
+    
+    
+    <category term="GitHub Actions" scheme="https://blog.cony.tech/tags/GitHub-Actions/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx配置跨域</title>
+    <link href="https://blog.cony.tech/nginx/nginx-cors/"/>
+    <id>https://blog.cony.tech/nginx/nginx-cors/</id>
+    <published>2025-02-15T17:21:04.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;给配置文件添加如下内容&quot;&gt;&lt;a href=&quot;#给配置文件添加如下内容&quot; class=&quot;headerlink&quot; title=&quot;给配置文件添加如下内容&quot;&gt;&lt;/a&gt;给配置文件添加如下内容&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="Nginx" scheme="https://blog.cony.tech/categories/Nginx/"/>
+    
+    
+    <category term="Nginx" scheme="https://blog.cony.tech/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows下以服务安装PHP-FPM</title>
+    <link href="https://blog.cony.tech/windows/windows-php-fpm/"/>
+    <id>https://blog.cony.tech/windows/windows-php-fpm/</id>
+    <published>2025-02-15T17:07:16.000Z</published>
+    <updated>2025-09-01T09:04:01.628Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;Windows下以服务安装PHP-FPM&quot;&gt;&lt;a href=&quot;#Windows下以服务安装PHP-FPM&quot; class=&quot;headerlink&quot; title=&quot;Windows下以服务安装PHP-FPM&quot;&gt;&lt;/a&gt;Windows下以服务安装PHP-FPM&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;需要：&lt;br&gt;  &lt;code&gt;winsw.exe&lt;/code&gt;（Win10用.NET 4, Win7用.NET 2）&lt;br&gt;  GitHub: &lt;a href=&quot;https://github.com/kohsuke/winsw&quot;&gt;https://github.com/kohsuke/winsw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;  &lt;code&gt;xxfpm.exe&lt;/code&gt;&lt;br&gt;  GitHub: &lt;a href=&quot;https://github.com/78/xxfpm&quot;&gt;https://github.com/78/xxfpm&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;将xxfpm下载的&lt;code&gt;bin&lt;/code&gt;文件夹放置到php文件夹中，并重命名为&lt;code&gt;xxfpm&lt;/code&gt;，并将&lt;code&gt;winsw.exe&lt;/code&gt;放置到此文件夹中并重命名为：&lt;code&gt;php82-fpm-service.exe&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Windows" scheme="https://blog.cony.tech/categories/Windows/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows下以服务安装Nginx</title>
+    <link href="https://blog.cony.tech/windows/windows-nginx/"/>
+    <id>https://blog.cony.tech/windows/windows-nginx/</id>
+    <published>2025-02-15T17:07:12.000Z</published>
+    <updated>2025-09-01T09:04:01.628Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;需要：&lt;br&gt;  &lt;code&gt;winsw.exe&lt;/code&gt;（Win10用.NET 4, Win7用.NET 2）&lt;br&gt;  GitHub: &lt;a href=&quot;https://github.com/kohsuke/winsw&quot;&gt;https://github.com/kohsuke/winsw&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;放置到Nginx文件夹中并重命名为：&lt;code&gt;nginx-service.exe&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Windows" scheme="https://blog.cony.tech/categories/Windows/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx配置Wordpress程序示例</title>
+    <link href="https://blog.cony.tech/nginx/nginx-wordpress/"/>
+    <id>https://blog.cony.tech/nginx/nginx-wordpress/</id>
+    <published>2025-02-15T16:57:57.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;配置示例&quot;&gt;&lt;a href=&quot;#配置示例&quot; class=&quot;headerlink&quot; title=&quot;配置示例&quot;&gt;&lt;/a&gt;配置示例&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="Nginx" scheme="https://blog.cony.tech/categories/Nginx/"/>
+    
+    
+    <category term="Nginx" scheme="https://blog.cony.tech/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx配置常驻进程程序示例</title>
+    <link href="https://blog.cony.tech/nginx/nginx-resident-process/"/>
+    <id>https://blog.cony.tech/nginx/nginx-resident-process/</id>
+    <published>2025-02-15T16:57:48.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;配置示例&quot;&gt;&lt;a href=&quot;#配置示例&quot; class=&quot;headerlink&quot; title=&quot;配置示例&quot;&gt;&lt;/a&gt;配置示例&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="Nginx" scheme="https://blog.cony.tech/categories/Nginx/"/>
+    
+    
+    <category term="Nginx" scheme="https://blog.cony.tech/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx配置php-fpm程序示例</title>
+    <link href="https://blog.cony.tech/nginx/nginx-php-fpm/"/>
+    <id>https://blog.cony.tech/nginx/nginx-php-fpm/</id>
+    <published>2025-02-15T16:56:47.000Z</published>
+    <updated>2025-09-01T09:04:01.627Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;配置示例&quot;&gt;&lt;a href=&quot;#配置示例&quot; class=&quot;headerlink&quot; title=&quot;配置示例&quot;&gt;&lt;/a&gt;配置示例&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="Nginx" scheme="https://blog.cony.tech/categories/Nginx/"/>
+    
+    
+    <category term="Nginx" scheme="https://blog.cony.tech/tags/Nginx/"/>
+    
+  </entry>
+  
+</feed>
